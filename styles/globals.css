@@ -1,20 +1,31 @@
 @tailwind base;
 @tailwind components;
+
+@font-face {
+	font-family: 'BogleWeb';
+	font-wight: 700;
+	src: url('../public/fonts/BogleWeb_subset-Bold.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'BogleWeb';
+	font-wight: 400;
+	src: url('../public/fonts/BogleWeb_subset-Regular.woff2') format('woff2');
+}
+
+.container-form {
+	@apply flex flex-col content-center w-86  mx-auto md:w-96 md:text-4xl;
+}
+
+.button-blue {
+	@apply bg-color-blue px-6 py-0 h-14 capitalize rounded-xl tracking-wider  border-2 shadow text-base font-normal;
+}
+.input-form {
+	@apply bg-white h-14 border-gray-300 border-2 mt-6 rounded shadow text-base p-4;
+}
 @tailwind utilities;
 
-html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+	font-family: 'BogleWeb1';
+	width: '100';
+	height: 100vh;
 }
