@@ -16,7 +16,7 @@ export default function Home() {
 
 			<header className="bg-sky-600 w-full h-20 sticky z-1 top-0 grid grid-flow-col auto-cols-auto gap-1 content-center flex items-center p-6">
 				<div className="text-white text-3xl">Clonmart</div>
-
+		<h1>que paso aqui </h1>
 				<div className="hidden lg:block">
 					<button className=" flex items-center justify-center text-white hover:bg-sky-700 rounded-full w-36 h-10">
 						<svg
