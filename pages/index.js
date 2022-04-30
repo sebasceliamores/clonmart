@@ -2,14 +2,12 @@ import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";
 
-import styles from "../styles/Home.module.css";
-
 export default function Home() {
 	const [isHoverMyItems, setIsHoverMyItems] = useState(false);
 	const [isHoverAccount, setIsHoverAccount] = useState(false);
 
 	return (
-		<div className={styles.container}>
+		<div>
 			<Head>
 				<title>ClonMart</title>
 				<meta name="description" content="Clon Walmart Project" />
@@ -84,7 +82,6 @@ export default function Home() {
 
 				<div
 					onMouseEnter={() => setIsHoverMyItems(true)}
-					onMouseLeave={() => setIsHoverMyItems(false)}
 					className="relative hidden lg:block"
 				>
 					<button className="flex items-center justify-center text-white hover:bg-sky-700 rounded-full w-32 h-10">
@@ -109,7 +106,10 @@ export default function Home() {
 					</button>
 
 					{isHoverMyItems && (
-						<div className="absolute mt-[13.5px] bg-white shadow w-36 rounded-b-lg">
+						<div
+							onMouseLeave={() => setIsHoverMyItems(false)}
+							className="absolute mt-[20px] bg-white shadow w-36 rounded-b-lg"
+						>
 							<ul className="py-0 text-sm text-gray-500 px-6">
 								<li className="flex  items-center mb-2 mt-4 hover:underline">
 									<svg
@@ -175,7 +175,6 @@ export default function Home() {
 
 				<div
 					onMouseEnter={() => setIsHoverAccount(true)}
-					onMouseLeave={() => setIsHoverAccount(false)}
 					className="relative hidden lg:block"
 				>
 					<button className="flex items-center justify-center text-white hover:bg-sky-700 rounded-full w-32 h-10">
@@ -200,7 +199,10 @@ export default function Home() {
 					</button>
 
 					{isHoverAccount && (
-						<div className="absolute  mt-[13.5px] bg-white shadow w-40 rounded-b-lg">
+						<div
+							onMouseLeave={() => setIsHoverAccount(false)}
+							className="absolute  mt-[20px] bg-white shadow w-40 rounded-b-lg"
+						>
 							<ul className="py-0 text-sm text-gray-500 px-6">
 								<li className="flex  items-center mb-2 mt-4 ">
 									<button className="bg-sky-600 w-36 h-8 text-xs text-white font-semibold rounded-full hover:bg-sky-700">
@@ -302,7 +304,7 @@ export default function Home() {
 				</button>
 			</section>
 
-			<main className={styles.main}>
+			<main className="h-screen">
 				<h1 className="text-3xl font-bold underline text-red-50">
 					Hello world!
 				</h1>
