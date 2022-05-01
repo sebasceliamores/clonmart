@@ -11,8 +11,10 @@
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.1",
     "next": "12.1.5",
+    "openssl": "^2.0.0",
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-dom": "18.1.0",
+    "swiper": "^8.1.4"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.5",

@@ -1,6 +1,7 @@
-import Head from "next/head";
-import Image from "next/image";
-import { useState } from "react";
+import Head from 'next/head';
+import Image from 'next/image';
+import { useState } from 'react';
+import Carousel from '../components/Carousel';
 
 export default function Home() {
 	const [isHoverMyItems, setIsHoverMyItems] = useState(false);
@@ -13,10 +14,9 @@ export default function Home() {
 				<meta name="description" content="Clon Walmart Project" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-
-			<header className="bg-sky-600 w-full h-20 sticky z-1 top-0 grid grid-flow-col auto-cols-auto gap-1 content-center flex items-center p-6">
+			
+			<header className="z-10 bg-sky-600 w-full h-20 sticky z-1 top-0 grid grid-flow-col auto-cols-auto gap-1 content-center flex items-center p-6">
 				<div className="text-white text-3xl">Clonmart</div>
-		<h1>que paso aqui </h1>
 				<div className="hidden lg:block">
 					<button className=" flex items-center justify-center text-white hover:bg-sky-700 rounded-full w-36 h-10">
 						<svg
@@ -80,10 +80,7 @@ export default function Home() {
 					</button>
 				</div>
 
-				<div
-					onMouseEnter={() => setIsHoverMyItems(true)}
-					className="relative hidden lg:block"
-				>
+				<div onMouseEnter={() => setIsHoverMyItems(true)} className="relative hidden lg:block">
 					<button className="flex items-center justify-center text-white hover:bg-sky-700 rounded-full w-32 h-10">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -173,10 +170,7 @@ export default function Home() {
 					)}
 				</div>
 
-				<div
-					onMouseEnter={() => setIsHoverAccount(true)}
-					className="relative hidden lg:block"
-				>
+				<div onMouseEnter={() => setIsHoverAccount(true)} className="relative hidden lg:block">
 					<button className="flex items-center justify-center text-white hover:bg-sky-700 rounded-full w-32 h-10">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -294,20 +288,14 @@ export default function Home() {
 							strokeLinejoin="round"
 							d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
 						/>
-						<path
-							strokeLinecap="round"
-							strokeLinejoin="round"
-							d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-						/>
+						<path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
 					</svg>
 					Update location
 				</button>
 			</section>
 
 			<main className="h-screen">
-				<h1 className="text-3xl font-bold underline text-red-50">
-					Hello world!
-				</h1>
+				<Carousel/>
 			</main>
 
 			<footer className="lg:h-44 bg-white lg:bg-blue-900 py-6 text-gray-700 lg:text-white border">
@@ -331,9 +319,7 @@ export default function Home() {
 					<li className="mr-6">Do Not Sell My Personal Information</li>
 					<li className="mr-6">Request My Personal Information</li>
 				</ul>
-				<div className="text-xs text-center  pt-3 ">
-					© 2022 Walmart. All Rights Reserved.
-				</div>
+				<div className="text-xs text-center  pt-3 ">© 2022 Walmart. All Rights Reserved.</div>
 			</footer>
 		</div>
 	);
