@@ -12,6 +12,7 @@ module.exports = {
 			width: {
 				86: '21.5rem',
 				90: '22.5rem',
+				'4/3': '130%',
 			},
 		},
 		screens: {

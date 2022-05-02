@@ -3,6 +3,7 @@ import HeaderLogo from '../components/HeaderLogo';
 import '../styles/globals.css';
 import { useRouter } from 'next/router';
 import FooterLogo from '../components/FooterLogo';
+import "swiper/css/bundle";
 
 function MyApp({ Component, pageProps }) {
 	const { pathname } = useRouter();
