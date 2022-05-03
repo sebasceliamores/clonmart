@@ -1,7 +1,6 @@
-import Head from 'next/head';
-import Image from 'next/image';
-import { useState } from 'react';
-import Carousel from '../components/Carousel';
+import Image from "next/image";
+import { useState } from "react";
+import Carousel from "../components/Carousel";
 
 export default function Home() {
 	const [isHoverMyItems, setIsHoverMyItems] = useState(false);
@@ -9,12 +8,6 @@ export default function Home() {
 
 	return (
 		<div>
-			<Head>
-				<title>ClonMart</title>
-				<meta name="description" content="Clon Walmart Project" />
-				<link rel="icon" href="/favicon.ico" />
-			</Head>
-			
 			<header className="z-10 bg-sky-600 w-full h-20 sticky z-1 top-0 grid grid-flow-col auto-cols-auto gap-1 content-center flex items-center p-6">
 				<div className="text-white text-3xl">Clonmart</div>
 				<div className="hidden lg:block">
@@ -294,8 +287,8 @@ export default function Home() {
 				</button>
 			</section>
 
-			<main className="h-screen">
-				<Carousel/>
+			<main className="h-screen w-full mx-auto p-6">
+				<Carousel />
 			</main>
 
 			<footer className="lg:h-44 bg-white lg:bg-blue-900 py-6 text-gray-700 lg:text-white border">
