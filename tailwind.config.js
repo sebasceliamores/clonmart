@@ -33,4 +33,7 @@ module.exports = {
 		},
 	},
 	plugins: [],
+	images: {
+    domains: ["images.unsplash.com"],
+  },
 };
